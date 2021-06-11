@@ -1,0 +1,201 @@
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% LaTeX4EI Template for Cheat Sheets                                Version 1.1
+%
+% Authors: Emanuel Regnath, Martin Zellner
+% Contact: info@latex4ei.de
+% Encode: UTF-8, tabwidth = 4, newline = LF
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+
+% ======================================================================
+% Document Settings
+% ======================================================================
+
+% possible options: color/nocolor, english/german, threecolumn
+% defaults: color, english
+\documentclass[eglish/german]{latex4ei/latex4ei_sheet}
+\usepackage[ngerman]{babel}
+\usepackage{booktabs}
+% set document information
+\title{Cheat Sheet}
+\author{RaoulDuke}						% optional, delete if unchanged
+\myemail{@co23:matrix.org}				% optional, delete if unchanged
+\mywebsite{www.github.com/doppelplus}	% optional, delete if unchanged
+
+
+% ======================================================================
+% Begin
+% ======================================================================
+\begin{document}
+
+\IfFileExists{git.id}{\input{git.id}}{}
+\ifdefined\GitRevision\mydate{\GitNiceDate\ (git \GitRevision)}\fi
+
+% Title
+% ----------------------------------------------------------------------
+\maketitle   % requires ./img/Logo.pdf
+
+
+% Section
+% ----------------------------------------------------------------------
+\section{Chemische Grundlagen}
+
+
+\begin{sectionbox}
+	\subsection{Formelzeichen}
+		\begin{tabular}{ll}
+			Dichte & $\rho$\\
+			Masse & $m$\\
+			molare Masse & $M$\\
+			Stoffmenge & $n$\\
+			Stoffmengenkonzentration & $c$\\
+			Volumen & $V$\\
+			Liter	& $l$\\
+		\end{tabular}
+
+	\subsection{Dichte}
+		$ Dichte =  \frac{Masse}{Volumen}$  $ \rho = \frac{m}{V}$
+	
+	\subsection{Mol und Molare Masse }
+		\textbf {Definition atomare Masseneinheit}\\
+		$1u = \frac{1}{12}(\ce{^{12}_{6}C}) = 1,66 \cdot 10^{-24}g$\\
+		\textbf {Definition Mol}\\
+		1 Mol eines Stoffes sind $6,02 \cdot 10^23$ Teilchen dieses Stoffes.\\
+		Im PSDE ist die relative Atomasse gleich der Masse eines Mols in g.\\
+		\textbf{Beispiel für Molare Masse eines Moleküls}:\\
+		Molare Masse von $H_2O$: $M(H_2O) = 2 \cdot M(H)+ M(O) = 2\cdot 1,0\frac{g}{mol} + 16,0\frac{g}{mol}= 18 \frac{g}{mol})$\\
+	
+	\subsection{Stoffmenge und Konzentration}
+		Stoffmenge: $n = \frac{m}{M}$\\
+		Stoffemengenkonzentration : $c = \frac{n}{V}$
+
+\end{sectionbox}
+
+\begin{sectionbox}
+	\subsection{Atommodell nach Bohr}
+		Hauptschalen entweder 1...8 oder K...R.\\
+		Nebenschalen mit maximaler Elektronenanzahl: s(2), p(6), d(10), f(14)\\
+		Schalenreihenfolge: $\xrightarrow{\text{1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p 6s 4f 5d 6p 7s 5f 6d 7p 8s}}$\\
+	
+		\subsection{Quantenmechanisches Atommodell}
+\end{sectionbox}
+		
+\begin{sectionbox}
+	\subsection{Chemische Bindung}
+	\begin{itemize}
+		\item Ionenbindung
+		\item Elektronenpaarbindung oder kovalente Bindung
+		\item metallische Bindung.
+	\end{itemize}
+	\subsubsection{Ionenbindung}
+		Je größer die Differenz der Elektronegativitätswerte der beteiligten Atome ist, desto
+		stärker ist der ionische Charakter einer Verbindung ausgeprägt.\\
+
+		Wichtige Anionen:\\
+		\begin{tabular}{ll}
+			\textbf{Formel} & \textbf{Name}\\
+			\midrule
+			$SO^{2-}_{4}$ & Sulfat\\
+			\midrule
+			$SO^{2-}_{3}$ & Sulfit\\
+			\midrule
+			$HSO^{-}_{4}$ & Hydrogensulfat\\
+			\midrule
+			$HSO^{-}_{3}$ & Hydrogensulfit\\
+			\midrule
+			$CO^{2-}_{3}$ & Carbonat\\
+			\midrule
+			$HCO^{-}_{3}$ & Hydrogencarbonat\\
+			\midrule
+			$PO^{3-}_{4}$ & Phosphat\\
+			\midrule
+			$HPO^{2-}_{4}$ & Monohydrogenphosphat\\
+			\midrule
+			$H_2PO^{2-}_{4}$ & Dihydrogenphosphat\\
+			\midrule
+			$NO^{-}_{3}$ & Nitrat\\
+			\midrule
+			$CN^{-}$ & Cyanid.\\
+		\end{tabular}
+		\\
+		Das Verhältnis von Kationen zu Anionen ist immer derart,
+		dass das Molekül elektrisch neutral ist.
+		
+		\subsubsection{Elektronenpaarbindung}
+		Kovalenzbindung
+	\end{sectionbox}
+
+	\section{Kunststoffe}
+		\begin{sectionbox}
+			$Polymerisationsgrad = \frac{Molare Masse der Makromolekuele}{Molare Masse der Monomere}$.
+
+			
+		\end{sectionbox}
+
+	\section{Korrosion}
+	\begin{sectionbox}
+		\begin{itemize}
+			\item Ausgangsstoff für chemische Reaktion = Edukt.
+			\item Resultierende Verbindung aus Reaktion = Produkt.
+			\item Gibbs-Helmholtz-Beziehung: $\Delta G = \Delta H - T\Delta S$.
+			\begin{itemize}
+				\item Wird Energie frei $\Delta G < 0$ exergonischer Vorgang.
+				\item Wird Energie verbraucht $\Delta G>0$, endergonischer Vorgang. 
+			\end{itemize}
+			
+			\item Der pH Wert einer Lösung ist der negativ dekadische Logarithmus des Zahlenwertes der Hydroxoniumionenkonzentration.\\
+					$pH = -lg\cdot c_{H3O^+}$
+		\end{itemize}
+
+		\textbf{Regeln zur Bestimmung der Oxidationszahl}
+		\begin{itemize}
+			\item Im Element ist die Oxidationszahl immer ±0.
+			\item Bei einfachen Ionen entspricht die Oxidationszahl immer der Ionenladung.
+			\item Die Summe der Oxidationszahlen aller Atome einer Verbindung ergibt die Gesamtladung der Verbindung.
+			\item Fluor besitzt in Verbindungen immer die Oxidationszahl –1.
+			\item Sauerstoff besitzt in den meisten Fällen die Oxidationszahl –2.
+			\item Wasserstoff besitzt in der Regel die Oxidationszahl +1 (Ausnahme: Hydride).
+			\item Metalle besitzen in der Regel positive Oxidationszahlen.
+			\item Oxidationszahlen anderer Atome in einer Verbindung werden durch Differenzbildung zur Gesamtladung ermittelt.
+			\item Bei kovalenten Verbindungen werden die Elektronenpaare dem elektronegativeren Partner zugeordnet.
+		\end{itemize}
+		
+	\end{sectionbox}
+
+	\section{Physik}
+		\begin{sectionbox}
+			\subsection{Formelzeichen}
+				\begin{tabular}{lll}
+					Größe & Formelzeichen & Einheit\\
+					Geschwindigkeit & $v$ & $\frac{m}{s}$\\
+					Strecke & $s$ & m\\
+					Kraft & $F$ & N(Newton)\\
+					Fläche & $A$ & m²\\
+					Beschleunigung & $a$ & $\frac{m}{s^2}$.\\
+					Drehzahl & $n$ & -\\
+					Winkelgeschwindigkeit & $\omega$ & 1/s\\ 
+
+				\end{tabular}
+
+			\subsection{Bewegungen}
+				\textbf{Gleichförmige Bewegung}\\
+				$v = \frac{s}{t}$.\\
+				Beschleunigung: $a = \frac{\Delta v}{\Delta t}$.\\
+				Zurückgelegte Strecke bei gleichmäßiger Beschleunigung:\\
+				$s(t)=s_0 + v_0t+ \frac{a}{2}t^2$\\
+				Zurückgelegte Strecke bei bekannter Endgeschwindigkeit und Zeit:\\
+				$ s = \frac{1}{2}\cdot v \cdot t$\\
+				\textbf{Kreisförmige Bewegungen}\\
+				Umfangsgeschwindigkeit: $v_u = n \cdot 2 \cdot r \cdot \pi$.\\
+				Winkelgeschwindigkeit: $\omega = \frac{\Delta\phi}{\Delta t}$
+
+
+
+		
+		
+		\end{sectionbox}
+
+% ======================================================================
+% End
+% ======================================================================
+\end{document}
