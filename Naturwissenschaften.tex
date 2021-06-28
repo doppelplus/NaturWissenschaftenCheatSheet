@@ -71,7 +71,15 @@
 	\subsection{Atommodell nach Bohr}
 		Hauptschalen entweder 1...8 oder K...R.\\
 		Nebenschalen mit maximaler Elektronenanzahl: s(2), p(6), d(10), f(14)\\
-		Schalenreihenfolge: $\xrightarrow{\text{1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p 6s 4f 5d 6p 7s 5f 6d 7p 8s}}$\\
+		\setlength{\tabcolsep}{0.25em}
+		\begin{tabular}{llllllllllllllllllll}
+			\ctrule
+			1s & 2s & 2p & 3s & 3p & 4s & 3d & 4p & 5s & 4d & 5p & 6s & 4f & 5d & 6p & 7s & 5f & 6d & 7p & 8s\\
+			\midrule
+			He &  | & Ne &	| & Ar &  | & |  & Kr &  | & |  & Xe &	| &  | & |  & Rn &  |  &  |  &  |  &  $\rightarrow$  &\\
+			\ctrule
+		\end{tabular}\\
+		%Schalenreihenfolge: $\xrightarrow[\text{He \taNe Ar Kr Xe Rn}]{\text{1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p 6s 4f 5d 6p 7s 5f 6d 7p 8s}}$\\
 	
 		\subsection{Quantenmechanisches Atommodell}
 		\begin{itemize}
@@ -271,6 +279,8 @@
  		\end{itemize}
 	\end{sectionbox}
 
+\newpage
+
 		\begin{sectionbox}
 			\section{Physik}
 			\subsection{Formelzeichen}
@@ -352,8 +362,9 @@
 						kinetische Energie & $m_1 \cdot u_1^2 + m_2 \cdot u_2^2 = m_1 \cdot v_1^2 + m_2 \cdot v_2^2$\\
 						Impuls & $m_1 \cdot u_1 + m_2 \cdot u_2 = m_1 \cdot v_1 + m_2 \cdot v_2$\\
 						Geschwindigkeiten & $u_1 +v_1 = u_2 + v_2$\\
-						v von $m_1$ danach & $v_1 = u_1 \cdot \frac{m_1-m_2}{m_1+m_2}+ u_2\frac{2m_2}{m_1+m_2} $\\
-						v von $m_2$ danach & $v_2 = u_2 \cdot \frac{m_2-m_1}{m_1+m_2}+ u_1\frac{2m_1}{m_1+m_2} $\\						
+						v von $m_1$ danach & $v_1 = 2 \cdot \frac{m_1 \cdot u_1 + m_2 \cdot u_2}{m_+ m_2}-u_1 $\\
+						v von $m_2$ danach & $v_2 = 2 \cdot \frac{m_1 \cdot u_1 + m_2 \cdot u_2}{m_+ m_2}-u_2  $\\						
+						\midrule
 					\end{tabular}\\
 
 					\textbf{Zentraler unelastischer Stoß:} $v = \frac{m_1 \cdot v_1 + m_2 \cdot v_2}{m_1+m_2}$\\
